@@ -18,8 +18,7 @@ export default function ContactUs() {
           color="text-[#FFFFFF]"
           border="border border-[#FDE547]"
           textSize="px-6 py-3 rounded-3xl"
-          children={"Contact Us Now!"}
-          />
+          >Contact Us Now</Button>
         </Link>
       </div>
     </div>

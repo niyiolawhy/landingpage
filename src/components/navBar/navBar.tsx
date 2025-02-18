@@ -47,8 +47,10 @@ export default function NavBar() {
             <Button
               color="text-[#07070A] bg-[#FDE547]"
               textSize="py-2 px-4 rounded-3xl"
-              children={"Hire Us"}
-            />
+            >
+              {" "}
+              Hire Us{" "}
+            </Button>
           </div>
         </Link>
       </div>
@@ -71,8 +73,10 @@ export default function NavBar() {
               <Button
                 color="text-[#07070A] bg-[#FDE547]"
                 textSize="py-2 px-4 rounded-3xl"
-                children={"Hire Us"}
-              />
+              >
+                {" "}
+                Hire Us{" "}
+              </Button>
             </div>
           </Link>
         </div>

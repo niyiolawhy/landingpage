@@ -22,15 +22,13 @@ export default function Home() {
           <Button
             color=" text-[#07070A] bg-[#FDE547]"
             textSize="py-2 px-4 rounded-3xl"
-            children={"View Demo"}
-          />
+          >View Demo</Button>
           <Link href="/contact-us">
           <Button
             color="text-[#FFFFFF] border-[#FDE547]"
             textSize="py-2 px-4 rounded-3xl"
             border="border"
-            children={"Contact Us"}
-            />
+            >Contact Us</Button>
             </Link>
         </div>
       </div>

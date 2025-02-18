@@ -2,18 +2,13 @@ import React from "react";
 import { AboutUsTools } from "../utils/statics";
 import Image from "next/image";
 
-interface AboutUsTool {
-  id: number;
-  image: string;
-}
-
 export default function AboutUs() {
   return (
     <div className="py-6">
       <div className="text-center py-6">
         <h2 className="text-[#FDE547] text-xl py-4">About Us</h2>
         <p className="text-4xl font-semibold max-w-[543px] mx-auto text-[#FFFFFF]">
-          Meet the Visionaries Behind Boltzshift's Digital Odyssey
+          Meet the Visionaries Behind Boltzshift&apos;s Digital Odyssey
         </p>
         <p className="text-[#FFFFFF] max-w-[691px] mx-auto text-xl py-8 leading-[34px]">
           Get the most talented candidates and bring them to the top of your

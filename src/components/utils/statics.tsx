@@ -5,7 +5,6 @@ import nurse from "@/assets/Frame 23.png";
 import doctor from "@/assets/Frame 24.png";
 import lawyer from "@/assets/Frame 25.png";
 import judge from "@/assets/Frame 26.png";
-import Image from "next/image";
 
 export const ServiceTools = [
   {

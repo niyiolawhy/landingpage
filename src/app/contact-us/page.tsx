@@ -10,7 +10,6 @@ import { CiLocationOn } from "react-icons/ci";
 import InputField from "@/components/utils/input";
 import TextAreaField from "@/components/utils/textarea";
 import Button from "@/components/utils/btn";
-import { fetchAPI } from "@/components/utils/fetchApi";
 import SuccessModal from "@/components/utils/sucessmodal";
 import ErrorModal from "@/components/utils/errormodal";
 import Link from "next/link";
@@ -41,15 +40,9 @@ const Page: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [openError, setOpenError] = React.useState(false);
 
-  const onSubmit: SubmitHandler<FormData> = async (data: any) => {
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
-      const response = await fetchAPI<{ message: string }>("api/contact", {
-        method: "POST",
-        body: data,
-      });
-      if (response.message) {
-        setIsModalOpen(true);
-      }
+     console.log(`data:${data}`);
     } catch (error) {
       setOpenError(true);
       console.log(`error:${error}`);
@@ -107,22 +100,20 @@ const Page: React.FC = () => {
           />
           <Button
             disabled={isSubmitting}
-            children={
-              isSubmitting ? (
-                <div className="flex items-center gap-2">
-                  <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
-                  Submitting...
-                </div>
-              ) : (
-                "Submit"
-              )
-            }
             color="bg-[#000000] text-[#FEFEFE]"
             textSize="w-full py-2 text-lg"
             type="submit"
-          />
+          >
+            {isSubmitting ? (
+              <div className="flex items-center gap-2">
+                <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                Submitting...
+              </div>
+            ) : (
+              "Submit"
+            )}
+          </Button>
         </form>
-       
       </div>
       <div className="bg-[#FFF9EE] text-primary-text mt-12 p-6 rounded-xl shadow-md shadow-[#00000026]">
         <div className="flex flex-col gap-6 sm:flex-row flex-wrap justify-between text-center sm:text-left">
