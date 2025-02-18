@@ -55,7 +55,7 @@ const Page: React.FC = () => {
 
   return (
     <div className="container mx-auto px-6 lg:px-12 xl:px-44 py-12">
-      <div className="text-center text-black mb-12">
+      <div className="text-center text-white mb-12">
         <h1>Contact Us</h1>
       </div>
       <div className="bg-[#F6F6F6] border border-[#004646] p-6 xl:p-12 mb-12 rounded-xl">
