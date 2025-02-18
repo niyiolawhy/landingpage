@@ -55,14 +55,14 @@ const Page: React.FC = () => {
 
   return (
     <div className="container mx-auto px-6 lg:px-12 xl:px-44 py-12">
-      <div className="text-center mb-12">
+      <div className="text-center text-black mb-12">
         <h1>Contact Us</h1>
       </div>
       <div className="bg-[#F6F6F6] border border-[#004646] p-6 xl:p-12 mb-12 rounded-xl">
-        <h3 className="text-lg font-medium text-center text-primary-text">
+        <h3 className="text-lg font-medium text-center text-black">
           We&apos;re Here to Meet Your Pressing Needs
         </h3>
-        <p className="text-center mt-4 text-sm text-primary-text">
+        <p className="text-center mt-4 text-sm text-black">
           Our team is dedicated to understanding your unique needs...
         </p>
       </div>
@@ -115,20 +115,20 @@ const Page: React.FC = () => {
           </Button>
         </form>
       </div>
-      <div className="bg-[#FFF9EE] text-primary-text mt-12 p-6 rounded-xl shadow-md shadow-[#00000026]">
+      <div className="bg-[#FFF9EE] text-black mt-12 p-6 rounded-xl shadow-md shadow-[#00000026]">
         <div className="flex flex-col gap-6 sm:flex-row flex-wrap justify-between text-center sm:text-left">
           <div className="mb-4 sm:mb-0 lg:max-w-[30%]">
-            <p className="font-medium">Office Address</p>
-            <div className="flex items-start justify-center my-3 md:gap-2">
+            <p className="font-medium text-black">Office Address</p>
+            <div className="flex items-start justify-center  text-black my-3 md:gap-2">
               <CiLocationOn />
-              <p className="text-primary-text">
+              <p className="text-black">
                 Dele Asiru street, Okota Lagos
               </p>
             </div>
           </div>
           <div className="mb-4 sm:mb-0">
-            <p className="font-medium mb-3">Phone Number</p>
-            <div className="flex items-center justify-center my-3 gap-2">
+            <p className="font-medium text-black mb-3">Phone Number</p>
+            <div className="flex text-black items-center text-black justify-center my-3 gap-2">
               <PiPhoneCall />
               <a href="tel:08161858407" className="text-black">
                 08161858407
@@ -136,8 +136,8 @@ const Page: React.FC = () => {
             </div>
           </div>
           <div className="mb-4 sm:mb-0">
-            <p className="font-medium mb-3">Email</p>
-            <div className="flex items-center justify-center hover:underline text-center my-3 gap-2">
+            <p className="font-medium text-black mb-3">Email</p>
+            <div className="flex items-center  text-black justify-center hover:underline text-center my-3 gap-2">
               <HiOutlineMail />
               <a
                 href="mailto:tajudeenomoniyi346@gmai.com"
@@ -147,7 +147,7 @@ const Page: React.FC = () => {
               </a>
             </div>
           </div>
-          <div>
+          <div className="text-black">
             <p className="font-medium mb-3">Social Media</p>
             <div className="w-full lg:w-auto flex space-x-1 justify-center lg:justify-end mt-4 lg:mt-0">
               <Link

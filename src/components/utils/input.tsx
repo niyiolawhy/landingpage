@@ -15,7 +15,7 @@ const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
           {required && <span className="text-red-500">*</span>}
         </div>
         <input
-          className="border rounded-lg border-[#A7A7A9] p-2 w-full focus:outline-none focus:ring-2 focus:ring-black text-primary-text mt-0  "
+          className="border rounded-lg border-[#A7A7A9] p-2 w-full focus:outline-none focus:ring-2 focus:ring-black text-black mt-0  "
           ref={ref}
           {...rest}
         />

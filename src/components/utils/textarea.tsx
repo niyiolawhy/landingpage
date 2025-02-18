@@ -22,7 +22,7 @@ const TextAreaField = forwardRef<HTMLTextAreaElement, TextAreaFieldProps>(
           required={required}
           ref={ref}
           {...rest}
-          className={`${className} border text-primary-text rounded-lg border-[#A7A7A9] p-4 w-full focus:outline-none focus:ring-2 focus:ring-black`}
+          className={`${className} border text-black rounded-lg border-[#A7A7A9] p-4 w-full focus:outline-none focus:ring-2 focus:ring-black`}
         ></textarea>
         {error && <p className="text-red-500 text-xs mt-1">{error}</p>}
       </div>
